@@ -8,6 +8,8 @@ Las únicas fuerzas involucradas son las puntuales del planeta y del Sol. En est
 
 Hicimos uso de nuestra solución para graficar nuestras trayectorias bajo distintas excentricidades (órbitas abiertas y cerradas) y proporciones.
 
+![Kepler varios periodos](/01-EDOs/graficos/orbita_cerrada_ej2_8pi.pdf)
+
 ## Corrección relativista de Einstein
 
 En las traslaciones de los planetas se ven involucradas más fuerzas que sólo la de ellas y el Sol, para reflejar esta situación se añade una pequeña perturbación al modelo lo cual nos lleva a tener una EDO no lineal que resolvimos usando ```odeint``` de la biblioteca Scipy de Python. Con nuestro [código](/01-EDOs/main.py) pudimos explorar el impacto de la perturbación hecha al modelo de Kepler.
