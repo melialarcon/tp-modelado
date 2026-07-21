@@ -1,6 +1,6 @@
 # [Trayectorias de Kepler y corrección relativista](/01-EDOs/)
 
-Las trayectorias que trazan los planetas de nuestro sistema solar están dados por elipses, con el Sol en uno de sus focos. Dada la ecuación diferencial que modela estos recorridos, se nos presentaros dos situaciones:
+Las trayectorias que trazan los planetas de nuestro sistema solar están dados por elipses, con el Sol en uno de sus focos. Dada la ecuación diferencial que modela estos recorridos, se nos presentaron dos situaciones:
 
 ## Modelo de Kepler
 
