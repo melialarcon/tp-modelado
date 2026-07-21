@@ -34,3 +34,10 @@ Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
 En el contexto de una EDP, poder dar una solución mediante aproximaciones implica una discretización del dominio mediante una malla. Refinar nuestra malla para dar una respuesta más fiel, nos cuesta poder de cómputo puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
+
+En el presente se nos presentó una EDP que quisimos resolver aproximadamente:
+ - Usamos métodos de diferencias finitas para armar sistemas lineales cuya incógnita era la solución de nuestra EDP.
+ - Armamos los sistemas tanto con matrices ralas como densas usando el módulo ```scipy.sparse``` y la biblioteca ```numpy``` respectivamente.
+ - Resolvimos los sistemas con distintos solves según el tipo de matrices involucradas: ```spsolve``` para ralas y ```solve``` para densas.
+
+[Comparamos](/03-EDPs/graficos/tiempos.png) la eficiencia de los distintos tipos de matrices para distintos refinamientos de la malla, y observamos que el orden de convergencia de nuestro método se podía estimar con una [regresión lineal](/03-EDPs/graficos/ajuste.png) sobre nuestros errores de aproximación.
