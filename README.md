@@ -17,7 +17,21 @@ En las traslaciones de los planetas se ven involucradas más fuerzas que sólo l
 
 # [Identificación del número telefónico](/02-Fourier/)
 
-Nos presentan dos audios: uno [limpio](/02-Fourier/tlfn-a.wav) y otro [ruidoso](/02-Fourier/tlfn-b.wav). Nuestro objetivo es, teniendo una tabla de codificación de los tonos telefónicos, descubrir a quién se llamó.
+Cuando marcamos un número telefónico, inevitablemente generaremos silencios intermedios que separan nuestros dígitos discados.
+
+En este trabajo se nos facilitaron dos audios: uno [limpio](/02-Fourier/tlfn-a.wav) y otro [ruidoso](/02-Fourier/tlfn-b.wav). Dado que el sistema de marcación por tonos usa dos sinusoidales de frecuencias distintas para distinguir dígitos, nuestra tarea era la de lograr tomar muestras de las marcaciones de cada número, para así descubrir a quién se llamó en cada caso.
+
+
+ * **Audio sin ruido:** Trabajamos con un [algoritmo de umbralización](/02-Fourier/main.py) para distinguir las marcaciones de dígitos.
+
+ * **Audio con ruido:** Para lograr usar el mismo algoritmo, realizamos unos pasos previos:
+
+      * Utilizamos la función ```fft``` del módulo ```scipy.fft``` de Python para obtener el [espectro frecuencias](/02-Fourier/graficos/freqs.png) de nuestro audio y analizarlo.
+      * Diseñamos un [filtro](/02-Fourier/main.py) con el módulo ```signal``` de la biblioteca Scipy, que nos permitió separar las marcaciones de números del ruido.
+
+      ![filtro](/02-Fourier/graficos/filtro%20pasa%20banda%20650%20a%201500.png)
+
+      * Utilizamos el mismo algoritmo de umbralización para distinguir las marcaciones de los dígitos
 
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
