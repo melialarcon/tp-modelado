@@ -33,7 +33,4 @@ Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las
 
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
-Una ecuación en derivadas parciales, EDP, es aquella en la que la incógnita es una función de al menos dos variables independientes, y que en esta ecuación aparecen involucradas tanto la función como sus derivadas parciales
-respecto de sus variables.
-En el presente trabajo se nos presentó un sistema compuesto por una ecuación diferencial y dos condiciones de contorno. Resolver este sistema implica dar a conocer la función u que satisface la ecuación dada, u_xx(x) = f(x), que corresponde a una EDP de Poisson puesto que f no es la función cero (en tal caso sería de Laplace). Resolver también implica que nuestra solución cumple con las condiciones de contorno dadas: una de Dirichlet que nos indica el valor de u en la frontera de su dominio, y otra de Neumann que nos aporta información sobre la pendiente o derivada de nuestra función u también en la frontera.
-Para dar respuesta al trabajo usamos las herramientas vistas en clase, y trabajamos con métodos de diferencias finitas que resuelven EDPs a partir la definición de una grilla de finitos nodos o puntos, que usamos para aproximar las derivadas de nuestra función y con ello construir un sistema de ecuaciones lineales en la que la incógnita resultaba ser la función buscada.
+En el contexto de una EDP, poder dar una solución mediante aproximaciones implica una discretización del dominio mediante una malla. Refinar nuestra malla para dar una respuesta más fiel, nos cuesta poder de cómputo puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
