@@ -17,4 +17,6 @@ En las traslaciones de los planetas se ven involucradas más fuerzas que sólo l
 
 # [Identificación del número telefónico](/02-Fourier/)
 
+Nos presentan dos audios: uno [limpio](/02-Fourier/tlfn-a.wav) y otro [ruidoso](/02-Fourier/tlfn-b.wav). Nuestro objetivo es, teniendo una tabla de codificación de los tonos telefónicos, descubrir a quién se llamó.
+
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
