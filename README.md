@@ -6,9 +6,8 @@ Las trayectorias que trazan los planetas de nuestro sistema solar están dados p
 
 Las únicas fuerzas involucradas son las puntuales del planeta y del Sol. En este apartado la ecuación resultaba lineal y pudimos dar solución analítica en nuestro [informe](/01-EDOs/informe.pdf).
 
-Hicimos uso de nuestra solución para graficar nuestras trayectorias bajo distintas excentricidades (órbitas abiertas y cerradas) y proporciones.
+Hicimos uso de nuestra solución para graficar nuestras trayectorias bajo distintas [excentricidades](/01-EDOs/graficos/orbita_cerrada_ej2_8pi.pdf) (órbitas abiertas y cerradas) y proporciones.
 
-![Kepler varios periodos](/01-EDOs/graficos/orbita_cerrada_ej2_8pi.pdf)
 
 ## Corrección relativista de Einstein
 
