@@ -1,2 +1,5 @@
-# tp-modelado
-Grupo: RAM, Introducción al Modelado Continuo 1C2026.
+# [Trayectorias de Kepler y corrección relativista](/01-EDOs/)
+
+# [Identificación del número telefónico](/02-Fourier/)
+
+# [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
