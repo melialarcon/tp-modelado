@@ -33,7 +33,7 @@ Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las
 
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
-En el contexto de una EDP, poder dar una solución mediante aproximaciones implica una discretización del dominio mediante una malla. Refinar nuestra malla para dar una respuesta más fiel, nos cuesta poder de cómputo puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
+En el contexto de una EDP, poder dar una solución mediante aproximaciones implica una discretización del dominio usando una malla. Refinar nuestra malla para dar una respuesta más fiel, nos cuesta poder de cómputo puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
 
 En el presente se nos presentó una EDP que quisimos resolver aproximadamente:
  - Usamos métodos de diferencias finitas para armar sistemas lineales cuya incógnita era la solución de nuestra EDP.
