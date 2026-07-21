@@ -35,7 +35,7 @@ Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las
 
 En el contexto de una EDP, poder dar una solución mediante aproximaciones implica una discretización del dominio usando una malla. Refinar nuestra malla para dar una respuesta más fiel, nos cuesta poder de cómputo puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
 
-En el presente se nos presentó una EDP que quisimos resolver aproximadamente:
+En el presente trabajo se nos presentó una EDP que quisimos resolver aproximadamente:
  - Usamos métodos de diferencias finitas para armar sistemas lineales cuya incógnita era la solución de nuestra EDP.
  - Armamos los sistemas tanto con matrices ralas como densas usando el módulo ```scipy.sparse``` y la biblioteca ```numpy``` respectivamente.
  - Resolvimos los sistemas con distintos solves según el tipo de matrices involucradas: ```spsolve``` para ralas y ```solve``` para densas.
