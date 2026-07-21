@@ -24,7 +24,7 @@ En este trabajo se nos facilitaron dos audios: uno [limpio](/02-Fourier/tlfn-a.w
 
  * **Audio sin ruido:** Trabajamos con un [algoritmo de umbralización](/02-Fourier/main.py) para distinguir las marcaciones de dígitos.
 
- * **Audio con ruido:** Para lograr usar el mismo algoritmo, realizamos unos pasos previos:
+ * **Audio con ruido:** Requerimos del siguiente tratamiento:
 
       * Utilizamos la función ```fft``` del módulo ```scipy.fft``` de Python para obtener el [espectro frecuencias](/02-Fourier/graficos/freqs.png) de nuestro audio y analizarlo.
       * Diseñamos un [filtro](/02-Fourier/main.py) con el módulo ```signal``` de la biblioteca Scipy, que nos permitió separar las marcaciones de números del ruido.
