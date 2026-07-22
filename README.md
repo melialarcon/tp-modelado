@@ -29,7 +29,7 @@ En este trabajo se nos facilitaron dos audios: uno [limpio](/02-Fourier/graficos
       * Diseñamos un [filtro](/02-Fourier/graficos/filtro%20pasa%20banda%20650%20a%201500.png) con el módulo ```signal``` de la biblioteca Scipy, que nos permitió separar las marcaciones de números del ruido.
       * Utilizamos el mismo algoritmo de umbralización para distinguir las marcaciones de los dígitos sobre la señal filtrada.
   
-Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las frecuencias altas y bajas con mayor presencia en cada marcación hallada y así descifrar a quién se llamó.
+Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las frecuencias altas y bajas con mayor presencia en cada marcación hallada y así descifrar a quién se llamó usando la tabla de referencia en el [informe](/02-Fourier/informe.pdf).
 
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
