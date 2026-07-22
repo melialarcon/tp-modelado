@@ -11,7 +11,7 @@ Hicimos uso de nuestra solución para graficar nuestras trayectorias bajo distin
 
 ## Corrección relativista de Einstein
 
-En las traslaciones de los planetas se ven involucradas más fuerzas que sólo la de ellas y el Sol, para reflejar esta situación se añade una pequeña perturbación al modelo lo cual nos lleva a tener una EDO no lineal que resolvimos usando ```odeint``` de la biblioteca Scipy de Python. Con nuestro [código](/01-EDOs/main.py) pudimos explorar el impacto de la perturbación hecha al modelo de Kepler: el corrimiento del *perihelio*.
+En las traslaciones de los planetas se ven involucradas más fuerzas que sólo la de ellas y el Sol, para reflejar esta situación se añade una pequeña perturbación al modelo lo cual nos lleva a tener una EDO no lineal que resolvimos numéricamente usando ```odeint``` de la biblioteca Scipy de Python. Con nuestro [código](/01-EDOs/main.py) pudimos explorar el impacto de la perturbación hecha al modelo de Kepler: el corrimiento del *perihelio*.
 
 ![Comparación de modelos](/01-EDOs/graficos/orbitas.png)
 
@@ -33,10 +33,10 @@ Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las
 
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
-En el contexto de una EDP, dar una solución numérica implica discretizar el dominio usando una malla. Refinar la malla para dar una respuesta más exacta nos cuesta poder de cómputo, puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
+En el contexto de una EDP, dar una solución numérica implica discretizar el dominio usando una malla. Refinar la malla para dar una respuesta más exacta nos cuesta poder de cómputo, puesto que se utilizan matrices que aumentan exponencialmente su tamaño.
 
 En este trabajo se nos presentó una EDP que resolvimos numéricamente:
- - Usamos métodos de diferencias finitas que desarrollamos en nuestro [informe](/02-Fourier/informe.pdf).
+ - Usamos métodos de diferencias finitas que desarrollamos en nuestro [informe](/03-EDPs/informe.pdf).
  - Usamos matrices ralas y densas usando el módulo ```scipy.sparse``` y la biblioteca ```numpy``` respectivamente.
  - [Programamos](/02-Fourier/main.py) nuestros sistemas lineales que resolvimos usando ```spsolve``` y ```solve``` según el tipo de matriz usada.
 
