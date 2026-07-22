@@ -33,11 +33,15 @@ Hicimos uso de la función ```fft``` del módulo ```scipy.fft``` para hallar las
 
 # [Resolución numérica de una ecuación de Poisson unidimensional](/03-EDPs/)
 
-En el contexto de una EDP, poder dar una solución mediante aproximaciones implica una discretización del dominio usando una malla. Refinar nuestra malla para dar una respuesta más fiel, nos cuesta poder de cómputo puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
+En el contexto de una EDP, dar una solución numérica implica discretizar el dominio usando una malla. Refinar la malla para dar una respuesta más exacta nos cuesta poder de cómputo, puesto que se utilizan matrices que aumentan exponencialmente de tamaño.
 
-En el presente trabajo se nos presentó una EDP que resolvimos numéricamente:
- - Usamos métodos de diferencias finitas para armar sistemas lineales cuya incógnita era la solución de nuestra EDP.
- - Armamos los sistemas tanto con matrices ralas como densas usando el módulo ```scipy.sparse``` y la biblioteca ```numpy``` respectivamente.
- - Resolvimos los sistemas con distintos solves según el tipo de matrices involucradas: ```spsolve``` para ralas y ```solve``` para densas.
+En este trabajo se nos presentó una EDP que resolvimos numéricamente:
+ - Usamos métodos de diferencias finitas que desarrollamos en nuestro [informe](/02-Fourier/informe.pdf).
+ - Usamos matrices ralas y densas usando el módulo ```scipy.sparse``` y la biblioteca ```numpy``` respectivamente.
+ - [Programamos](/02-Fourier/main.py) nuestros sistemas lineales que resolvimos usando ```spsolve``` y ```solve``` según el tipo de matriz usada.
 
-[Comparamos](/03-EDPs/graficos/tiempos.png) la eficiencia de los distintos tipos de matrices para distintos refinamientos de la malla, y observamos que el orden de convergencia de nuestro método se podía estimar con una [regresión lineal](/03-EDPs/graficos/ajuste.png) sobre nuestros errores de aproximación.
+Nos pareció interesante [comparar](/03-EDPs/graficos/tiempos.png) la eficiencia de las matrices ralas y densas para distintos refinamientos de la malla, y observamos que el orden de convergencia de nuestro método se podía estimar con una [regresión lineal](/03-EDPs/graficos/ajuste.png) sobre nuestros errores de aproximación.
+
+Por último, realizamos pruebas de estrés para encontrar el refinamiento máximo que soportaba nuestra computadora y graficamos su resultado.
+
+![Máximo k](/03-EDPs/graficos/k_mas_alto.png)
