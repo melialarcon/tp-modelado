@@ -19,7 +19,7 @@ En las traslaciones de los planetas se ven involucradas más fuerzas que sólo l
 
 Cuando marcamos un número telefónico, inevitablemente generaremos silencios intermedios que separan nuestros dígitos discados.
 
-En este trabajo se nos facilitaron dos audios: uno [limpio](/02-Fourier/tlfn-a.wav) y otro [ruidoso](/02-Fourier/tlfn-b.wav). Dado que el sistema de marcación por tonos usa dos sinusoidales de frecuencias distintas para distinguir dígitos, nuestra tarea era la de lograr tomar muestras de las marcaciones de cada número, para así descubrir a quién se llamó en cada caso.
+En este trabajo se nos facilitaron dos audios: uno [limpio](/02-Fourier/graficos/grafico_a_seg.png) y otro [ruidoso](/02-Fourier/graficos/grafico_b_seg.png). Dado que el sistema de marcación por tonos usa dos sinusoidales de frecuencias distintas para distinguir dígitos, nuestra tarea era la de lograr tomar muestras de las marcaciones de cada número, para así descubrir a quién se llamó en cada caso.
 
  * **Audio sin ruido:** Trabajamos con un [algoritmo de umbralización](/02-Fourier/main.py) para distinguir las marcaciones de dígitos.
 
